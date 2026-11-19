@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 不让搜索引擎收录。想让 Google 能搜到时，删掉下一行 -->
+<meta name="robots" content="noindex">
+<title>Jiayi Sun</title>
+<meta name="description" content="Jiayi Sun, M.S. student in Economics and Computation at Duke University. Interested in how recommender systems and generative AI shape consumer preferences and choices, and how firms and creators respond.">
+<style>
+  :root {
+    --text: #1f2328;
+    --muted: #5b6168;
+    --line: #e3e5e8;
+    --accent: #00539b; /* Duke blue */
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 48px;
+  }
+  .header {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+  .header-text { flex: 1; }
+  .photo {
+    width: 180px;
+    height: 225px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px;
+  }
+  .role {
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .links {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+    margin: 40px 0 16px;
+  }
+  p { margin: 0 0 14px; }
+  ul.plain { margin: 0; padding-left: 1.1em; }
+  ul.plain li { margin-bottom: 6px; }
+  .kw-label { font-weight: 600; }
+  .paper-title { font-weight: 600; }
+  .paper-meta { color: var(--muted); font-size: 0.95rem; margin: 2px 0 6px; }
+  .paper-desc { margin: 0; }
+  .status {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 0 6px;
+    margin-left: 6px;
+    vertical-align: 2px;
+  }
+  .edu-row { display: flex; justify-content: space-between; gap: 16px; }
+  .edu-row span:last-child { color: var(--muted); white-space: nowrap; }
+  .edu-item { margin-bottom: 10px; }
+  .edu-sub { color: var(--muted); font-size: 0.95rem; }
+  footer {
+    margin-top: 56px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  @media (max-width: 520px) {
+    main { padding-top: 40px; }
+    .edu-row { flex-direction: column; gap: 0; }
+    .header { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .photo { width: 150px; height: 188px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="header">
+    <img class="photo" src="photo.jpg?v=6" alt="Photo of Jiayi Sun">
+    <div class="header-text">
+      <h1>Jiayi Sun</h1>
+      <p class="role">M.S. in Economics &amp; Computation, Duke University</p>
+      <ul class="links">
+        <li><a href="mailto:jiayi.sun2@duke.edu">jiayi.sun2@duke.edu</a></li>
+        <!-- 恢复 CV 链接：把下一行开头和结尾的注释符号删掉，只留中间的 li 那段，并把 cv.pdf 上传到仓库 -->
+        <!-- <li><a href="cv.pdf">CV (PDF)</a></li> -->
+      </ul>
+    </div>
+  </div>
+
+  <h2>About</h2>
+  <p>
+    I am a master's student in Economics and Computation at Duke University.
+    I am interested in how recommender systems and generative AI shape consumer
+    preferences and choices, and how firms and creators respond in what they
+    offer and how they present it.
+  </p>
+  <p>
+    Before Duke, I earned a BBA in Applied Economics from The Chinese University
+    of Hong Kong, Shenzhen.
+  </p>
+  <p>
+    Outside of research, I love swimming, music, and modern art.
+  </p>
+
+  <h2>Research interests</h2>
+  <p><span class="kw-label">Substantive:</span>
+    Recommender systems, generative AI, consumer preferences, product
+    differentiation, firm innovation.</p>
+  <p><span class="kw-label">Methods:</span>
+    Causal inference, machine learning, natural language processing,
+    algorithm audits.</p>
+
+  <h2>Working paper</h2>
+  <!-- 一月 arXiv 上线后：把下面的标题改成链接，例如
+       <a class="paper-title" href="https://arxiv.org/abs/XXXX.XXXXX">Auditing AI Music Labeling and Exposure on Spotify</a>
+       并把 "Work in progress" 改成 "arXiv, 2027"。 -->
+  <p class="paper-title">
+    Auditing AI Music Labeling and Exposure on Spotify
+    <span class="status">Work in progress</span>
+  </p>
+  <p class="paper-meta">with Richard So and Emily Wenger</p>
+  <p class="paper-desc">
+    We use audio embeddings to compare AI-generated and human-created music that
+    Spotify recommends during passive listening.
+  </p>
+
+  <h2>Education</h2>
+  <div class="edu-item">
+    <div class="edu-row"><span>Duke University</span><span>2025 – 2027 (expected)</span></div>
+    <div class="edu-sub">M.S. in Economics &amp; Computation</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-row"><span>The Chinese University of Hong Kong, Shenzhen</span><span>2020 – 2025</span></div>
+    <div class="edu-sub">B.B.A. in Applied Economics</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-row"><span>Università Bocconi</span><span>Spring 2023</span></div>
+    <div class="edu-sub">Exchange student</div>
+  </div>
+
+  <footer>Last updated November 2026</footer>
+
+</main>
+</body>
+</html>
